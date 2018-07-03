@@ -5,56 +5,28 @@ import {
   CardTitle,
   CardBody,
   CardImg,
-  CardImgOverlay,
   CardText,
   CardLink,
-  ListGroup,
-  ListGroupItem,
   Row,
   Col,
-  Button,
 } from 'reactstrap';
 
-import { Line } from 'react-chartjs-2';
-
-import { overlayCards, bgCards, gradientCards } from 'demos/cardPage';
-
-import { getStackLineChart, stackLineChartOptions } from 'demos/chartjs';
-
 import Page from 'components/Page';
-import { UserCard } from 'components/Card';
 
-import bg1 from 'assets/img/bg/hackimg1.jpeg';
-import bg2 from 'assets/img/bg/hackimg2.jpeg';
-import bg18Image from 'assets/img/bg/background_1920-18.jpg';
+import bg6 from 'assets/img/bg/hackimg6.png';
+import bg7 from 'assets/img/bg/hackimg7.png';
+import bg8 from 'assets/img/bg/hackimg8.jpeg';
+import bg9 from 'assets/img/bg/hackimg9.jpg';
 
 const Upcoming = () => {
   return (
     <Page title="Upcoming Challenges">    
       <Row>
-      <Col md={3} sm={3} xs={12} className="mb-3">
+      <Col md={4} sm={3} xs={12} className="mb-3">
           <Card>
-            <CardImg top src={bg2} />
+            <CardImg top style={{ width: 380, height: 200 }} src={bg6} />
             <CardBody>
               <CardTitle>Hack Away!</CardTitle>
-              <CardText></CardText>
-            </CardBody>
-            <CardBody>
-              <CardLink tag="a" href="#">
-                Go to details
-              </CardLink>
-              <CardLink tag="a" href="#">
-                More
-              </CardLink>
-            </CardBody>
-          </Card>
-        </Col>
-
-        <Col md={3} sm={3} xs={12} className="mb-3">
-          <Card>
-            <CardImg top src={bg2} />
-            <CardBody>
-              <CardTitle>Card with list group</CardTitle>
               <CardText>
                 This example shows how to use card with list group{' '}
               </CardText>
@@ -70,11 +42,31 @@ const Upcoming = () => {
           </Card>
         </Col>
 
-        <Col md={3} sm={3} xs={12} className="mb-3">
+        <Col md={4} sm={3} xs={12} className="mb-3">
           <Card>
-            <CardImg top src={bg2} />
+            <CardImg top style={{ width: 380, height: 200 }} src={bg7} />
             <CardBody>
-              <CardTitle>Card with list group</CardTitle>
+              <CardTitle>ASU Startup Challenge</CardTitle>
+              <CardText>
+                This example shows how to use card with list group{' '}
+              </CardText>
+            </CardBody>
+            <CardBody>
+              <CardLink tag="a" href="#">
+                Go to details
+              </CardLink>
+              <CardLink tag="a" href="#">
+                More
+              </CardLink>
+            </CardBody>
+          </Card>
+        </Col>
+
+        <Col md={4} sm={3} xs={12} className="mb-3">
+          <Card>
+            <CardImg top style={{ width: 380, height: 200 }} src={bg8} />
+            <CardBody>
+              <CardTitle>Summer Meetup</CardTitle>
               <CardText>
                 This example shows how to use card with list group{' '}
               </CardText>
@@ -97,11 +89,11 @@ const Upcoming = () => {
       </Row>
 
       <Row>
-      <Col md={3} sm={3} xs={12} className="mb-3">
+      <Col md={4} sm={3} xs={12} className="mb-3">
           <Card>
-            <CardImg top src={bg2} />
+            <CardImg top style={{ width: 380, height: 200 }} src={bg9} />
             <CardBody>
-              <CardTitle>Card with list group</CardTitle>
+              <CardTitle>Capture The Flag</CardTitle>
               <CardText>
                 This example shows how to use card with list group{' '}
               </CardText>
@@ -117,126 +109,6 @@ const Upcoming = () => {
           </Card>
         </Col>
 
-        <Col md={3} sm={3} xs={12} className="mb-3">
-          <Card>
-            <CardImg top src={bg2} />
-            <CardBody>
-              <CardTitle>Card with list group</CardTitle>
-              <CardText>
-                This example shows how to use card with list group{' '}
-              </CardText>
-            </CardBody>
-            {/* <ListGroup flush>
-              <ListGroupItem>Cras justo odio</ListGroupItem>
-              <ListGroupItem>Dapibus ac facilisis in</ListGroupItem>
-              <ListGroupItem>Morbi leo risus</ListGroupItem>
-            </ListGroup> */}
-            <CardBody>
-              <CardLink tag="a" href="#">
-                Go to details
-              </CardLink>
-              <CardLink tag="a" href="#">
-                More
-              </CardLink>
-            </CardBody>
-          </Card>
-        </Col>
-
-        <Col md={3} sm={3} xs={12} className="mb-3">
-          <Card>
-            <CardImg top src={bg2} />
-            <CardBody>
-              <CardTitle>Card with list group</CardTitle>
-              <CardText>
-                This example shows how to use card with list group{' '}
-              </CardText>
-            </CardBody>
-            {/* <ListGroup flush>
-              <ListGroupItem>Cras justo odio</ListGroupItem>
-              <ListGroupItem>Dapibus ac facilisis in</ListGroupItem>
-              <ListGroupItem>Morbi leo risus</ListGroupItem>
-            </ListGroup> */}
-            <CardBody>
-              <CardLink tag="a" href="#">
-                Go to details
-              </CardLink>
-              <CardLink tag="a" href="#">
-                More
-              </CardLink>
-            </CardBody>
-          </Card>
-        </Col>
-      </Row>
-      <Row>
-      <Col md={3} sm={3} xs={12} className="mb-3">
-          <Card>
-            <CardImg top src={bg2} />
-            <CardBody>
-              <CardTitle>Card with list group</CardTitle>
-              <CardText>
-                This example shows how to use card with list group{' '}
-              </CardText>
-            </CardBody>
-            <CardBody>
-              <CardLink tag="a" href="#">
-                Go to details
-              </CardLink>
-              <CardLink tag="a" href="#">
-                More
-              </CardLink>
-            </CardBody>
-          </Card>
-        </Col>
-
-        <Col md={3} sm={3} xs={12} className="mb-3">
-          <Card>
-            <CardImg top src={bg2} />
-            <CardBody>
-              <CardTitle>Card with list group</CardTitle>
-              <CardText>
-                This example shows how to use card with list group{' '}
-              </CardText>
-            </CardBody>
-            {/* <ListGroup flush>
-              <ListGroupItem>Cras justo odio</ListGroupItem>
-              <ListGroupItem>Dapibus ac facilisis in</ListGroupItem>
-              <ListGroupItem>Morbi leo risus</ListGroupItem>
-            </ListGroup> */}
-            <CardBody>
-              <CardLink tag="a" href="#">
-                Go to details
-              </CardLink>
-              <CardLink tag="a" href="#">
-                More
-              </CardLink>
-            </CardBody>
-          </Card>
-        </Col>
-
-        <Col md={3} sm={3} xs={12} className="mb-3">
-          <Card>
-            <CardImg top src={bg2} />
-            <CardBody>
-              <CardTitle>Card with list group</CardTitle>
-              <CardText>
-                This example shows how to use card with list group{' '}
-              </CardText>
-            </CardBody>
-            {/* <ListGroup flush>
-              <ListGroupItem>Cras justo odio</ListGroupItem>
-              <ListGroupItem>Dapibus ac facilisis in</ListGroupItem>
-              <ListGroupItem>Morbi leo risus</ListGroupItem>
-            </ListGroup> */}
-            <CardBody>
-              <CardLink tag="a" href="#">
-                Go to details
-              </CardLink>
-              <CardLink tag="a" href="#">
-                More
-              </CardLink>
-            </CardBody>
-          </Card>
-        </Col>
       </Row>
     </Page>
   );

@@ -11,7 +11,7 @@ import CardPage from 'pages/CardPage';
 import ChartPage from 'pages/ChartPage';
 import ChallengesContainer from 'pages/ChallengesContainer';
 // pages
-import DashboardPage from 'pages/DashboardPage';
+import ChallengesPage from 'pages/ChallengesPage';
 import DashboardUserPage from 'pages/DashboardUser';
 
 import DropdownPage from 'pages/DropdownPage';
@@ -154,6 +154,12 @@ class App extends React.Component {
               path="/register"
               layout={MainLayout}
               component={AuthPage}
+            />
+            <LayoutRoute
+              exact
+              path="/challenges"
+              layout={MainLayout}
+              component={ChallengesPage}
             />
             <Redirect to="/" />
           </Switch>

@@ -38,7 +38,7 @@ import {
 import bn from 'utils/bemnames';
 
 const sidebarBackground = {
-  backgroundImage: `url("${sidebarBgImage}")`,
+  //backgroundImage: `url("${sidebarBgImage}")`,
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
 };
@@ -83,9 +83,9 @@ const pageContents = [
 const navItems = [
   { to: '/', name: 'dashboard', exact: true, Icon: MdDashboard },
   { to: '/cards', name: 'challenges', exact: false, Icon: MdWeb },
-  { to: '/charts', name: 'charts', exact: false, Icon: MdInsertChart },
-  { to: '/widgets', name: 'widgets', exact: false, Icon: MdWidgets },
-];
+  // { to: '/charts', name: 'charts', exact: false, Icon: MdInsertChart },
+  // { to: '/widgets', name: 'widgets', exact: false, Icon: MdWidgets },
+]; 
 
 const bem = bn.create('sidebar');
 
@@ -112,7 +112,7 @@ class Sidebar extends React.Component {
         <div className={bem.e('background')} style={sidebarBackground} />
         <div className={bem.e('content')}>
           <Navbar>
-            <SourceLink className="navbar-brand d-flex">
+            {/* <SourceLink className="navbar-brand d-flex">
               <img
                 src={logo200Image}
                 width="40"
@@ -121,9 +121,9 @@ class Sidebar extends React.Component {
                 alt=""
               />
               <span className="text-white">
-                Reduction <FaGithub />
+                Menu
               </span>
-            </SourceLink>
+            </SourceLink> */}
           </Navbar>
           <Nav vertical>
             {navItems.map(({ to, name, exact, Icon }, index) => (
@@ -141,7 +141,7 @@ class Sidebar extends React.Component {
               </NavItem>
             ))}
 
-            <NavItem
+            {/* <NavItem
               className={bem.e('nav-item')}
               onClick={this.handleClick('Components')}>
               <BSNavLink className={bem.e('nav-item-collapse')}>
@@ -215,9 +215,9 @@ class Sidebar extends React.Component {
                   </BSNavLink>
                 </NavItem>
               ))}
-            </Collapse>
+            </Collapse> */}
 
-            <NavItem
+            {/* <NavItem
               className={bem.e('nav-item')}
               onClick={this.handleClick('Pages')}>
               <BSNavLink className={bem.e('nav-item-collapse')}>
@@ -253,7 +253,7 @@ class Sidebar extends React.Component {
                   </BSNavLink>
                 </NavItem>
               ))}
-            </Collapse>
+            </Collapse> */}
           </Nav>
         </div>
       </aside>

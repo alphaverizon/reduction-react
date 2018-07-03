@@ -13,53 +13,30 @@ import {
   CardDeck,
   Row,
   Col,
-  ListGroup,
-  ListGroupItem,
-  Badge,
   Button,
 } from 'reactstrap';
 
 import {
-  MdInsertChart,
-  MdBubbleChart,
-  MdPieChart,
-  MdShowChart,
   MdAccessAlarm,
-  MdPersonPin,
-  MdRateReview,
-  MdThumbUp,
   MdEditLocation,
-  MdShare,
   MdPeople,
 } from 'react-icons/lib/md';
 
-import InfiniteCalendar from 'react-infinite-calendar';
-
-import { Line, Bar } from 'react-chartjs-2';
-
 import {
   supportTicketsData,
-  productsData,
-  userProgressTableData,
   avatarsData,
-  todosData,
-  chartjs,
 } from 'demos/dashboardPage';
-import { getStackLineChart, stackLineChartOptions } from 'demos/chartjs';
 
 import Page from 'components/Page';
 
 import SupportTicket from 'components/SupportTicket';
-import ProductMedia from 'components/ProductMedia';
-import UserProgressTable from 'components/UserProgressTable';
 
 import { AnnouncementCard, TodosCard } from 'components/Card';
 
 import { NumberWidget, IconWidget } from 'components/Widget';
 
-import MapWithBubbles from 'components/MapWithBubbles';
 import HorizontalAvatarList from 'components/HorizontalAvatarList';
-import bg11Image from 'assets/img/bg/hack1.jpeg';
+import bg11Image from 'assets/img/bg/hackimg1.png';
 
 const today = new Date();
 const lastWeek = new Date(
@@ -81,7 +58,7 @@ class ChallengesPage extends React.Component {
     return (
       <Page
         className="ChallengesPage"
-        title="Hack Day!">
+        title="IOT Weekend Hackathon">
         {/* <Row>
           <Col lg={3} md={6} sm={6} xs={12}>
             <NumberWidget
