@@ -10,7 +10,7 @@ import Upcoming from 'pages/Upcoming';
 
 function TabContainer(props) {
   return (
-    <Typography component="div" style={{ padding: 8 * 3 }}>
+    <Typography component="div" style={{ padding: 10 * 3 }}>
       {props.children}
     </Typography>
   );
@@ -43,9 +43,10 @@ class SimpleTabs extends React.Component {
     return (
       <div className={classes.root}>
         <AppBar position="static">
-          <Tabs value={value} onChange={this.handleChange}>
+          <Tabs style={{ backgroundColor: '#fc5c7b' }} value={value} onChange={this.handleChange}>
             <Tab label="Ongoing Challenges" />
             <Tab label="Upcoming Challenges" />
+            <Tab label="My Challenges" />
           </Tabs>
         </AppBar>
         {value === 0 && <TabContainer>

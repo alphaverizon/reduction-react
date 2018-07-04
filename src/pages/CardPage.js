@@ -5,59 +5,53 @@ import {
   CardTitle,
   CardBody,
   CardImg,
-  CardImgOverlay,
   CardText,
   CardLink,
-  ListGroup,
-  ListGroupItem,
   Row,
   Col,
-  Button,
 } from 'reactstrap';
 
-import { Line } from 'react-chartjs-2';
-
-import { overlayCards, bgCards, gradientCards } from 'demos/cardPage';
-
-import { getStackLineChart, stackLineChartOptions } from 'demos/chartjs';
-
 import Page from 'components/Page';
-import { UserCard } from 'components/Card';
 
-import bg1 from 'assets/img/bg/hackimg1.jpeg';
-import bg2 from 'assets/img/bg/hackimg2.jpeg';
-import bg18Image from 'assets/img/bg/background_1920-18.jpg';
-import detailsPage from 'pages/ChallengesPage';
+import bg1 from 'assets/img/bg/hackimg1.png';
+import bg2 from 'assets/img/bg/hackimg2.png';
+import bg3 from 'assets/img/bg/hackimg3.png';
+import bg4 from 'assets/img/bg/hackimg4.png';
+import bg5 from 'assets/img/bg/hackimg5.png';
+import bg6 from 'assets/img/bg/hackimg6.png';
+import bg7 from 'assets/img/bg/hackimg7.png';
+import bg8 from 'assets/img/bg/hackimg8.jpg';
+import bg9 from 'assets/img/bg/hackimg9.png';
 
 const CardPage = () => {
   return (
     <Page title="Ongoing Challenges">    
       <Row>
-      <Col md={3} sm={3} xs={12} className="mb-3">
+      <Col md={4} sm={3} xs={12} className="mb-3">
           <Card>
-            <CardImg top src={bg1} />
+            <CardImg style={{ width: 370, height: 250 }} top src={bg1} />
             <CardBody>
-              <CardTitle>Card with list group</CardTitle>
+              <CardTitle>IOT Hackathon</CardTitle>
               <CardText>
                 This example shows how to use card with list group{' '}
               </CardText>
             </CardBody>
             <CardBody>
-              <CardLink tag="a" href="#" onClick={detailsPage}>
+              <CardLink tag="a" href="challenges">
                 Enroll
               </CardLink>
-              <CardLink tag="a" href="detailsPage">
+              <CardLink tag="a" href="challenges">
                 More
               </CardLink>
             </CardBody>
           </Card>
         </Col>
 
-        <Col md={3} sm={3} xs={12} className="mb-3">
+        <Col md={4} sm={3} xs={12} className="mb-3">
           <Card>
-            <CardImg top src={bg1} />
+            <CardImg style={{ width: 380, height: 250 }} top src={bg5} />
             <CardBody>
-              <CardTitle>Card with list group</CardTitle>
+              <CardTitle>Reactathon</CardTitle>
               <CardText>
                 This example shows how to use card with list group{' '}
               </CardText>
@@ -78,11 +72,11 @@ const CardPage = () => {
           </Card>
         </Col>
 
-        <Col md={3} sm={3} xs={12} className="mb-3">
+        <Col md={4} sm={3} xs={12} className="mb-3">
           <Card>
-            <CardImg top src={bg1} />
+            <CardImg style={{ width: 380, height: 250 }} top src={bg3} />
             <CardBody>
-              <CardTitle>Card with list group</CardTitle>
+              <CardTitle>A.S. Watson Hackathon</CardTitle>
               <CardText>
                 This example shows how to use card with list group{' '}
               </CardText>
@@ -105,11 +99,11 @@ const CardPage = () => {
       </Row>
 
       <Row>
-      <Col md={3} sm={3} xs={12} className="mb-3">
+      <Col md={4} sm={3} xs={12} className="mb-3">
           <Card>
-            <CardImg top src={bg1} />
+            <CardImg top style={{ width: 370, height: 250 }} src={bg4} />
             <CardBody>
-              <CardTitle>Card with list group</CardTitle>
+              <CardTitle>Girl Hackathon</CardTitle>
               <CardText>
                 This example shows how to use card with list group{' '}
               </CardText>
@@ -125,11 +119,11 @@ const CardPage = () => {
           </Card>
         </Col>
 
-        <Col md={3} sm={3} xs={12} className="mb-3">
+        <Col md={4} sm={3} xs={12} className="mb-3">
           <Card>
-            <CardImg top src={bg1} />
+            <CardImg top style={{ width: 380, height: 250 }} src={bg2} />
             <CardBody>
-              <CardTitle>Card with list group</CardTitle>
+              <CardTitle>Codeathon</CardTitle>
               <CardText>
                 This example shows how to use card with list group{' '}
               </CardText>
@@ -150,11 +144,11 @@ const CardPage = () => {
           </Card>
         </Col>
 
-        <Col md={3} sm={3} xs={12} className="mb-3">
+        <Col md={4} sm={3} xs={12} className="mb-3">
           <Card>
-            <CardImg top src={bg1} />
+            <CardImg top style={{ width: 380, height: 250 }} src={bg6} />
             <CardBody>
-              <CardTitle>Card with list group</CardTitle>
+              <CardTitle>The 36 Hour Challenge</CardTitle>
               <CardText>
                 This example shows how to use card with list group{' '}
               </CardText>
@@ -176,11 +170,11 @@ const CardPage = () => {
         </Col>
       </Row>
       <Row>
-      <Col md={3} sm={3} xs={12} className="mb-3">
+      <Col md={4} sm={3} xs={12} className="mb-3">
           <Card>
-            <CardImg top src={bg1} />
+            <CardImg top style={{ width: 380, height: 250 }} src={bg7} />
             <CardBody>
-              <CardTitle>Card with list group</CardTitle>
+              <CardTitle>Speedathon</CardTitle>
               <CardText>
                 This example shows how to use card with list group{' '}
               </CardText>
@@ -196,11 +190,11 @@ const CardPage = () => {
           </Card>
         </Col>
 
-        <Col md={3} sm={3} xs={12} className="mb-3">
+        <Col md={4} sm={3} xs={12} className="mb-3">
           <Card>
-            <CardImg top src={bg1} />
+            <CardImg top style={{ width: 370, height: 250 }} src={bg8} />
             <CardBody>
-              <CardTitle>Card with list group</CardTitle>
+              <CardTitle>Live Chat Hackathon</CardTitle>
               <CardText>
                 This example shows how to use card with list group{' '}
               </CardText>
@@ -221,11 +215,11 @@ const CardPage = () => {
           </Card>
         </Col>
 
-        <Col md={3} sm={3} xs={12} className="mb-3">
+        <Col md={4} sm={3} xs={12} className="mb-3">
           <Card>
-            <CardImg top src={bg1} />
+            <CardImg top style={{ width: 380, height: 250 }} src={bg9} />
             <CardBody>
-              <CardTitle>Card with list group</CardTitle>
+              <CardTitle>Save The Hacker</CardTitle>
               <CardText>
                 This example shows how to use card with list group{' '}
               </CardText>
