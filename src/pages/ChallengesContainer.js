@@ -7,6 +7,7 @@ import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import CardPage from 'pages/CardPage';
 import Upcoming from 'pages/Upcoming';
+import Your from 'pages/Your';
 
 function TabContainer(props) {
   return (
@@ -57,6 +58,9 @@ class SimpleTabs extends React.Component {
         </TabContainer>}
         {value === 1 && <TabContainer>
           <Upcoming/>
+        </TabContainer>}
+        {value === 2 && <TabContainer>
+          <Your/>
         </TabContainer>}
       </div>
     );

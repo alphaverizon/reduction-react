@@ -28,8 +28,7 @@ const Upcoming = () => {
             <CardBody>
               <CardTitle>Hack Away!</CardTitle>
               <CardText>
-                This example shows how to use card with list group{' '}
-              </CardText>
+              With technology being so close to the everyday lives of almost every person. This hackathon is about touching lives, shaping the future, and making a difference.               </CardText>
             </CardBody>
             <CardBody>
               <CardLink tag="a" href="#">
@@ -48,8 +47,7 @@ const Upcoming = () => {
             <CardBody>
               <CardTitle>ASU Startup Challenge</CardTitle>
               <CardText>
-                This example shows how to use card with list group{' '}
-              </CardText>
+              With technology being so close to the everyday lives of almost every person. This hackathon is about touching lives, shaping the future, and making a difference.               </CardText>
             </CardBody>
             <CardBody>
               <CardLink tag="a" href="#">
@@ -68,8 +66,7 @@ const Upcoming = () => {
             <CardBody>
               <CardTitle>Summer Meetup</CardTitle>
               <CardText>
-                This example shows how to use card with list group{' '}
-              </CardText>
+              With technology being so close to the everyday lives of almost every person. This hackathon is about touching lives, shaping the future, and making a difference.               </CardText>
             </CardBody>
             {/* <ListGroup flush>
               <ListGroupItem>Cras justo odio</ListGroupItem>
@@ -95,8 +92,7 @@ const Upcoming = () => {
             <CardBody>
               <CardTitle>Capture The Flag</CardTitle>
               <CardText>
-                This example shows how to use card with list group{' '}
-              </CardText>
+              With technology being so close to the everyday lives of almost every person. This hackathon is about touching lives, shaping the future, and making a difference.               </CardText>
             </CardBody>
             <CardBody>
               <CardLink tag="a" href="#">
