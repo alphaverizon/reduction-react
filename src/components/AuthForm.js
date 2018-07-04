@@ -2,7 +2,8 @@ import logo200Image from 'assets/img/logo/logo_200.png';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { Button, Form, FormGroup, Input, Label } from 'reactstrap';
-import { hashHistory } from 'react-router';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import DashboardPage from '../pages/DashboardPage'
 
 class AuthForm extends React.Component {
   constructor(props) {
@@ -30,9 +31,10 @@ class AuthForm extends React.Component {
 
   handleSubmit = event => {
     event.preventDefault();
-    console.log(this.state);
-    if(this.state.name == "vinetha"){
-          }
+    console.log("state",this.state.name);
+    if(this.state.name === "user"){
+      
+    }
   };
 
   renderButtonText() {
@@ -76,6 +78,7 @@ class AuthForm extends React.Component {
     } = this.props;
 
     return (
+      // <Router>
       <Form onSubmit={this.handleSubmit}>
         {showLogo && (
           <div className="text-center pb-4">
@@ -115,8 +118,8 @@ class AuthForm extends React.Component {
           block
           onClick={this.handleSubmit}>
           {this.renderButtonText()}
+          {/* <Link to={'/'}>{this.renderButtonText()}</Link> */}
         </Button>
-
         <div className="text-center pt-1">
           <h6>or</h6>
           <h6>
@@ -134,6 +137,11 @@ class AuthForm extends React.Component {
 
         {children}
       </Form>
+      //  <Switch>
+      //   <Route exact path='/' component={DashboardPage} />
+      //   <Route exact path='/Dashboard' component={DashboardPage} />
+      // </Switch>
+      // </Router> 
     );
   }
 }

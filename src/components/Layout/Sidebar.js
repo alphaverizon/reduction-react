@@ -83,6 +83,8 @@ const pageContents = [
 const navItems = [
   { to: '/dashboard', name: 'dashboard', exact: true, Icon: MdDashboard },
   { to: '/cards', name: 'challenges', exact: false, Icon: MdWeb },
+  { to: '/admindashboard', name: 'Admin Dashboard', exact: false, Icon: MdDashboard},
+  { to: '/createnew', name: 'Start a Hackathon', exact: false, Icon: MdWeb},
   // { to: '/charts', name: 'charts', exact: false, Icon: MdInsertChart },
   //{ to: '/widgets', name: 'Event', exact: false, Icon: MdWidgets },
 ]; 

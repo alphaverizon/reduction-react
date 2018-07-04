@@ -8,6 +8,8 @@ import ChallengesContainer from 'pages/ChallengesContainer';
 // pages
 import ChallengesPage from 'pages/ChallengesPage';
 import DashboardUserPage from 'pages/DashboardUser';
+import CreateNew from 'pages/CreateNew';
+import AdminDashboard from 'pages/AdminDashboard';
 
 import WidgetPage from 'pages/WidgetPage';
 
@@ -91,6 +93,18 @@ class App extends React.Component {
               path="/dashboard"
               layout={MainLayout}
               component={DashboardUserPage}
+            />
+            <LayoutRoute
+              exact
+              path="/createnew"
+              layout={MainLayout}
+              component={CreateNew}
+            />
+            <LayoutRoute
+              exact
+              path="/admindashboard"
+              layout={MainLayout}
+              component={AdminDashboard}
             />
             <Redirect to="/" />
           </Switch>

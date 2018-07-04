@@ -230,15 +230,15 @@ export const chartjs = {
       labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
       datasets: [
         {
-          label: 'Expense for this year',
+          label: 'Tournaments',
           backgroundColor: '#6a82fb',
-          stack: 'Expense',
+          stack: 'Tournaments',
           data: [10000, 30000, 50000, 80000, 60000, 20000, 10000],
         },
         {
-          label: 'Expense for last year',
+          label: 'Tournaments',
           backgroundColor: '#fc5c7d',
-          stack: 'Expense',
+          stack: 'Tournaments',
           data: [30000, 80000, 50000, 100000, 60000, 40000, 90000],
         },
       ],
@@ -309,14 +309,14 @@ export const chartjs = {
       labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
       datasets: [
         {
-          label: 'Revenue for this year',
+          label: 'Number of participants',
           borderColor: '#6a82fb',
           backgroundColor: '#6a82fb',
           data: [0, 1300, 2200, 3400, 4600, 3500, 3000],
         },
 
         {
-          label: 'Revenue for last year',
+          label: 'Number of participants',
           borderColor: '#fc5c7d',
           backgroundColor: '#fc5c7d',
           data: [0, 1300, 2200, 3400, 4600, 3500, 3000],
