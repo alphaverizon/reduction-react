@@ -5,6 +5,8 @@ import { Media, Button } from 'reactstrap';
 
 import Avatar from './Avatar';
 
+import IconButtons from './iconbutton';
+
 const statusMap = {
   open: 'info',
   closed: 'muted',
@@ -18,6 +20,7 @@ const SupportTicket = ({
   text,
   status,
   onClick,
+  likes,
   ...restProps
 }) => {
   return (
@@ -46,6 +49,7 @@ const SupportTicket = ({
       <Media>
         <p className="text-muted">{text}</p>
       </Media>
+      <IconButtons initLikes={likes}/>
     </div>
   );
 };
@@ -55,7 +59,6 @@ SupportTicket.propTypes = {
   name: PropTypes.string,
   date: PropTypes.date,
   text: PropTypes.string,
-  status: PropTypes.oneOf(['open', 'closed', 'pending']),
   onClick: PropTypes.func,
 };
 

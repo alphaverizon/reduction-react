@@ -191,7 +191,8 @@ export const supportTicketsData = [
     date: '30 mins ago',
     text:
       'Lorem ipsum dolor sit amet,consectetuer edipiscing elit,sed diam nonummy nibh euismod tinciduntut laoreet doloremagna aliquam erat volutpat.',
-    status: 'pending',
+    status: '',
+    likes:20
   },
   {
     id: 2,
@@ -200,7 +201,8 @@ export const supportTicketsData = [
     date: '1 hour ago',
     text:
       'Lorem ipsum dolor sit amet,consectetuer edipiscing elit,sed diam nonummy nibh euismod tinciduntut laoreet doloremagna aliquam erat volutpat.',
-    status: 'open',
+    status: '',
+    likes:3
   },
   {
     id: 3,
@@ -209,7 +211,8 @@ export const supportTicketsData = [
     date: 'yesterday',
     text:
       'Lorem ipsum dolor sit amet,consectetuer edipiscing elit,sed diam nonummy nibh euismod tinciduntut laoreet doloremagna aliquam erat volutpat.',
-    status: 'closed',
+    status: '',
+    likes:-2
   },
 ];
 

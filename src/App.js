@@ -7,7 +7,8 @@ import AuthPage from 'pages/AuthPage';
 import BadgePage from 'pages/BadgePage';
 import ButtonGroupPage from 'pages/ButtonGroupPage';
 import ButtonPage from 'pages/ButtonPage';
-import CardPage from 'pages/CardPage';
+//import CardPage from 'pages/CardPage';
+import CardPage from 'pages/CardPage_bk';
 import ChartPage from 'pages/ChartPage';
 import ChallengesContainer from 'pages/ChallengesContainer';
 // pages
@@ -21,7 +22,9 @@ import ModalPage from 'pages/ModalPage';
 import ProgressPage from 'pages/ProgressPage';
 import TablePage from 'pages/TablePage';
 import TypographyPage from 'pages/TypographyPage';
+
 import WidgetPage from 'pages/WidgetPage';
+
 import React from 'react';
 import componentQueries from 'react-component-queries';
 import { BrowserRouter, Redirect, Switch } from 'react-router-dom';
@@ -75,7 +78,7 @@ class App extends React.Component {
               exact
               path="/cards"
               layout={MainLayout}
-              component={ChallengesContainer}
+              component={CardPage}
             />
             <LayoutRoute
               exact
