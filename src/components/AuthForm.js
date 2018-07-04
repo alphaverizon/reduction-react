@@ -14,6 +14,8 @@ class AuthForm extends React.Component {
     };
     this.getUserName=this.getUserName.bind(this);
     this.getPassword=this.getPassword.bind(this);
+
+    this.goToDashboard=this.goToDashboard.bind(this);
   }
   get isLogin() {
     return this.props.authState === STATE_LOGIN;
@@ -33,7 +35,10 @@ class AuthForm extends React.Component {
     event.preventDefault();
     console.log("state",this.state.name);
     if(this.state.name === "user"){
-      
+      window.location = '/dashboard';
+    }
+    if(this.state.name === "admin"){
+      window.location='/admindashboard';
     }
   };
 
@@ -62,6 +67,9 @@ class AuthForm extends React.Component {
     this.setState({
       password:event.target.value
     })
+  }
+
+  goToDashboard(){
   }
 
   render() {
