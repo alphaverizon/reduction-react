@@ -25,6 +25,9 @@ const styles = theme => ({
     flexGrow: 1,
     backgroundColor: theme.palette.background.paper,
   },
+  tabsRoot: {
+    borderBottom: '1px solid #e8e8e8',
+  },
 });
 
 class SimpleTabs extends React.Component {
@@ -43,10 +46,10 @@ class SimpleTabs extends React.Component {
     return (
       <div className={classes.root}>
         <AppBar position="static">
-          <Tabs style={{ backgroundColor: '#fc5c7b' }} value={value} onChange={this.handleChange}>
-            <Tab label="Ongoing Challenges" />
-            <Tab label="Upcoming Challenges" />
-            <Tab label="My Challenges" />
+          <Tabs style={{ backgroundColor: '#fff'}} value={value} onChange={this.handleChange}>
+            <Tab style={{ backgroundColor: '#fc5c7b' }} label="Ongoing Challenges" />
+            <Tab style={{ backgroundColor: '#fc5c7b' }} label="Upcoming Challenges" />
+            <Tab style={{ backgroundColor: '#fc5c7b' }} label="My Challenges" />
           </Tabs>
         </AppBar>
         {value === 0 && <TabContainer>

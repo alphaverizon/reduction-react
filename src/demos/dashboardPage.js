@@ -190,7 +190,7 @@ export const supportTicketsData = [
     name: 'Sim',
     date: '30 mins ago',
     text:
-      'Lorem ipsum dolor sit amet,consectetuer edipiscing elit,sed diam nonummy nibh euismod tinciduntut laoreet doloremagna aliquam erat volutpat.',
+      'I have one free ticket to IoT hackathon. Unfortunately I will not be able to attend :( Message me with your email and I can mail you a pdf copy.',
     status: '',
     likes:20
   },
@@ -200,7 +200,7 @@ export const supportTicketsData = [
     name: 'Jane',
     date: '1 hour ago',
     text:
-      'Lorem ipsum dolor sit amet,consectetuer edipiscing elit,sed diam nonummy nibh euismod tinciduntut laoreet doloremagna aliquam erat volutpat.',
+      'Please check your Inbox. Just emailed you the discount code for ticket.',
     status: '',
     likes:3
   },
@@ -210,7 +210,7 @@ export const supportTicketsData = [
     name: 'Tom',
     date: 'yesterday',
     text:
-      'Lorem ipsum dolor sit amet,consectetuer edipiscing elit,sed diam nonummy nibh euismod tinciduntut laoreet doloremagna aliquam erat volutpat.',
+      'I have come down with the flu and am thinking tomorrow might be too much. I’m not sure who to notify.',
     status: '',
     likes:-2
   },

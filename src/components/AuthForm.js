@@ -2,8 +2,18 @@ import logo200Image from 'assets/img/logo/logo_200.png';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { Button, Form, FormGroup, Input, Label } from 'reactstrap';
+import { hashHistory } from 'react-router';
 
 class AuthForm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name:'',
+      password:''
+    };
+    this.getUserName=this.getUserName.bind(this);
+    this.getPassword=this.getPassword.bind(this);
+  }
   get isLogin() {
     return this.props.authState === STATE_LOGIN;
   }
@@ -20,6 +30,9 @@ class AuthForm extends React.Component {
 
   handleSubmit = event => {
     event.preventDefault();
+    console.log(this.state);
+    if(this.state.name == "vinetha"){
+          }
   };
 
   renderButtonText() {
@@ -34,6 +47,19 @@ class AuthForm extends React.Component {
     }
 
     return buttonText;
+  }
+
+  getUserName(event){
+    this.setState({
+      name:event.target.value
+    })
+    
+  }
+
+  getPassword(event){
+    this.setState({
+      password:event.target.value
+    })
   }
 
   render() {
@@ -56,7 +82,7 @@ class AuthForm extends React.Component {
             <img
               src={logo200Image}
               className="rounded"
-              style={{ width: 60, height: 60, cursor: 'pointer' }}
+              style={{ width: 130, height: 70, cursor: 'pointer' }}
               alt="logo"
               onClick={onLogoClick}
             />
@@ -64,11 +90,11 @@ class AuthForm extends React.Component {
         )}
         <FormGroup>
           <Label for={usernameLabel}>{usernameLabel}</Label>
-          <Input {...usernameInputProps} />
+          <Input {...usernameInputProps} onChange={this.getUserName}/>
         </FormGroup>
         <FormGroup>
           <Label for={passwordLabel}>{passwordLabel}</Label>
-          <Input {...passwordInputProps} />
+          <Input {...passwordInputProps} onChange={this.getPassword}/>
         </FormGroup>
         {this.isSignup && (
           <FormGroup>
@@ -125,6 +151,7 @@ AuthForm.propTypes = {
   confirmPasswordLabel: PropTypes.string,
   confirmPasswordInputProps: PropTypes.object,
   onLogoClick: PropTypes.func,
+  history: PropTypes.func,
 };
 
 AuthForm.defaultProps = {
@@ -133,17 +160,17 @@ AuthForm.defaultProps = {
   usernameLabel: 'Email',
   usernameInputProps: {
     type: 'email',
-    placeholder: 'your@email.com',
+    placeholder: '',
   },
   passwordLabel: 'Password',
   passwordInputProps: {
     type: 'password',
-    placeholder: 'your password',
+    placeholder: '',
   },
   confirmPasswordLabel: 'Confirm Password',
   confirmPasswordInputProps: {
     type: 'password',
-    placeholder: 'confirm your password',
+    placeholder: '',
   },
   onLogoClick: () => {},
 };

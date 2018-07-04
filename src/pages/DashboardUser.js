@@ -61,8 +61,8 @@ import { NumberWidget, IconWidget } from 'components/Widget';
 import MapWithBubbles from 'components/MapWithBubbles';
 import HorizontalAvatarList from 'components/HorizontalAvatarList';
 
-import bg1Image from 'assets/img/bg/hack6.jpg';
-import bg3Image from 'assets/img/bg/hack2.jpg';
+import bg1Image from 'assets/img/bg/hackimg1.png';
+import bg3Image from 'assets/img/bg/hackimg2.png';
 
 const today = new Date();
 const lastWeek = new Date(
@@ -118,7 +118,7 @@ class DashboardUserPage extends React.Component {
               style={{ width: 'auto', height: 150 }}
             />
             <CardBody>
-              <CardTitle>Microsoft CodeHack</CardTitle>
+              <CardTitle>IOT Hackathon</CardTitle>
               <CardText>
                 Current Progress
                     <Progress
@@ -134,7 +134,7 @@ class DashboardUserPage extends React.Component {
         <Col md={6} sm={6} xs={12} className="mb-3">
           <Card className="flex-row">
             <CardBody>
-            <CardTitle>Verizon SecureHack</CardTitle>
+            <CardTitle>Reactathon</CardTitle>
               <CardText>
                 Current Progress
                     <Progress
@@ -156,7 +156,7 @@ class DashboardUserPage extends React.Component {
       <Row>
           <Col md="6" sm="12" xs="12">
             <Card>
-              <CardHeader>Upcoming Hackathon</CardHeader>
+              <CardHeader>You may like</CardHeader>
               <CardBody>
                 {productsData.map(
                   ({ id, image, title, description, right }) => (

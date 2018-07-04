@@ -81,10 +81,10 @@ const pageContents = [
 ];
 
 const navItems = [
-  { to: '/', name: 'dashboard', exact: true, Icon: MdDashboard },
+  { to: '/dashboard', name: 'dashboard', exact: true, Icon: MdDashboard },
   { to: '/cards', name: 'challenges', exact: false, Icon: MdWeb },
   // { to: '/charts', name: 'charts', exact: false, Icon: MdInsertChart },
-  { to: '/widgets', name: 'Event', exact: false, Icon: MdWidgets },
+  //{ to: '/widgets', name: 'Event', exact: false, Icon: MdWidgets },
 ]; 
 
 const bem = bn.create('sidebar');

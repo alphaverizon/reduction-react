@@ -13,10 +13,10 @@ import {
 
 import Page from 'components/Page';
 
-import bg6 from 'assets/img/bg/hackimg6.png';
+import bg6 from 'assets/img/bg/hackimg2.png';
 import bg7 from 'assets/img/bg/hackimg7.png';
-import bg8 from 'assets/img/bg/hackimg8.jpeg';
-import bg9 from 'assets/img/bg/hackimg9.jpg';
+import bg8 from 'assets/img/bg/hackimg8.png';
+import bg9 from 'assets/img/bg/hackimg9.png';
 
 const Upcoming = () => {
   return (
@@ -24,7 +24,7 @@ const Upcoming = () => {
       <Row>
       <Col md={4} sm={3} xs={12} className="mb-3">
           <Card>
-            <CardImg top style={{ width: 380, height: 200 }} src={bg6} />
+            <CardImg top style={{ width: 370, height: 250 }} src={bg6} />
             <CardBody>
               <CardTitle>Hack Away!</CardTitle>
               <CardText>
@@ -33,10 +33,10 @@ const Upcoming = () => {
             </CardBody>
             <CardBody>
               <CardLink tag="a" href="#">
-                Go to details
+                Details
               </CardLink>
               <CardLink tag="a" href="#">
-                More
+              Enroll
               </CardLink>
             </CardBody>
           </Card>
@@ -44,7 +44,7 @@ const Upcoming = () => {
 
         <Col md={4} sm={3} xs={12} className="mb-3">
           <Card>
-            <CardImg top style={{ width: 380, height: 200 }} src={bg7} />
+            <CardImg top style={{ width: 370, height: 250 }} src={bg7} />
             <CardBody>
               <CardTitle>ASU Startup Challenge</CardTitle>
               <CardText>
@@ -53,10 +53,10 @@ const Upcoming = () => {
             </CardBody>
             <CardBody>
               <CardLink tag="a" href="#">
-                Go to details
+                Details
               </CardLink>
               <CardLink tag="a" href="#">
-                More
+              Enroll
               </CardLink>
             </CardBody>
           </Card>
@@ -64,7 +64,7 @@ const Upcoming = () => {
 
         <Col md={4} sm={3} xs={12} className="mb-3">
           <Card>
-            <CardImg top style={{ width: 380, height: 200 }} src={bg8} />
+            <CardImg top style={{ width: 370, height: 250 }} src={bg8} />
             <CardBody>
               <CardTitle>Summer Meetup</CardTitle>
               <CardText>
@@ -78,10 +78,10 @@ const Upcoming = () => {
             </ListGroup> */}
             <CardBody>
               <CardLink tag="a" href="#">
-                Go to details
+               Details
               </CardLink>
               <CardLink tag="a" href="#">
-                More
+              Enroll
               </CardLink>
             </CardBody>
           </Card>
@@ -91,7 +91,7 @@ const Upcoming = () => {
       <Row>
       <Col md={4} sm={3} xs={12} className="mb-3">
           <Card>
-            <CardImg top style={{ width: 380, height: 200 }} src={bg9} />
+            <CardImg top style={{ width: 370, height: 250 }} src={bg9} />
             <CardBody>
               <CardTitle>Capture The Flag</CardTitle>
               <CardText>
@@ -100,10 +100,10 @@ const Upcoming = () => {
             </CardBody>
             <CardBody>
               <CardLink tag="a" href="#">
-                Go to details
+                Details
               </CardLink>
               <CardLink tag="a" href="#">
-                More
+              Enroll
               </CardLink>
             </CardBody>
           </Card>

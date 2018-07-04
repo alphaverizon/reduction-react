@@ -1,27 +1,13 @@
 import { STATE_LOGIN, STATE_SIGNUP } from 'components/AuthForm';
 import GAListener from 'components/GAListener';
 import { EmptyLayout, LayoutRoute, MainLayout } from 'components/Layout';
-import AlertPage from 'pages/AlertPage';
 import AuthModalPage from 'pages/AuthModalPage';
 import AuthPage from 'pages/AuthPage';
-import BadgePage from 'pages/BadgePage';
-import ButtonGroupPage from 'pages/ButtonGroupPage';
-import ButtonPage from 'pages/ButtonPage';
-import CardPage from 'pages/CardPage';
-//import CardPage from 'pages/CardPage_bk';
 import ChartPage from 'pages/ChartPage';
 import ChallengesContainer from 'pages/ChallengesContainer';
 // pages
 import ChallengesPage from 'pages/ChallengesPage';
 import DashboardUserPage from 'pages/DashboardUser';
-
-import DropdownPage from 'pages/DropdownPage';
-import FormPage from 'pages/FormPage';
-import InputGroupPage from 'pages/InputGroupPage';
-import ModalPage from 'pages/ModalPage';
-import ProgressPage from 'pages/ProgressPage';
-import TablePage from 'pages/TablePage';
-import TypographyPage from 'pages/TypographyPage';
 
 import WidgetPage from 'pages/WidgetPage';
 
@@ -65,16 +51,12 @@ class App extends React.Component {
             <LayoutRoute
               exact
               path="/"
-              layout={MainLayout}
-              component={DashboardUserPage}
+              layout={EmptyLayout}
+              component={props => (
+                <AuthPage {...props} authState={STATE_SIGNUP} />
+              )}
             />
-            <LayoutRoute
-              exact
-              path="/buttons"
-              layout={MainLayout}
-              component={ButtonPage}
-            />
-            <LayoutRoute
+             <LayoutRoute
               exact
               path="/cards"
               layout={MainLayout}
@@ -85,66 +67,6 @@ class App extends React.Component {
               path="/widgets"
               layout={MainLayout}
               component={WidgetPage}
-            />
-            <LayoutRoute
-              exact
-              path="/typography"
-              layout={MainLayout}
-              component={TypographyPage}
-            />
-            <LayoutRoute
-              exact
-              path="/alerts"
-              layout={MainLayout}
-              component={AlertPage}
-            />
-            <LayoutRoute
-              exact
-              path="/tables"
-              layout={MainLayout}
-              component={TablePage}
-            />
-            <LayoutRoute
-              exact
-              path="/badges"
-              layout={MainLayout}
-              component={BadgePage}
-            />
-            <LayoutRoute
-              exact
-              path="/button-groups"
-              layout={MainLayout}
-              component={ButtonGroupPage}
-            />
-            <LayoutRoute
-              exact
-              path="/dropdowns"
-              layout={MainLayout}
-              component={DropdownPage}
-            />
-            <LayoutRoute
-              exact
-              path="/progress"
-              layout={MainLayout}
-              component={ProgressPage}
-            />
-            <LayoutRoute
-              exact
-              path="/modals"
-              layout={MainLayout}
-              component={ModalPage}
-            />
-            <LayoutRoute
-              exact
-              path="/forms"
-              layout={MainLayout}
-              component={FormPage}
-            />
-            <LayoutRoute
-              exact
-              path="/input-groups"
-              layout={MainLayout}
-              component={InputGroupPage}
             />
             <LayoutRoute
               exact
@@ -163,6 +85,12 @@ class App extends React.Component {
               path="/challenges"
               layout={MainLayout}
               component={ChallengesPage}
+            />
+            <LayoutRoute
+              exact
+              path="/dashboard"
+              layout={MainLayout}
+              component={DashboardUserPage}
             />
             <Redirect to="/" />
           </Switch>

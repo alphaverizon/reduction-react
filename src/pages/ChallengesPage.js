@@ -159,16 +159,19 @@ class ChallengesPage extends React.Component {
         <Col md="12" sm="8" xs="8">
           <Card className="flex-row">
           <CardBody>
-              <CardTitle>Get the most out of Local Hack Day!</CardTitle>
+              <CardTitle>Here is your big opportunity to build something that the world has never seen before</CardTitle>
               <CardText>
-              It's finally here! December 2nd, 2017 marks the 4th annual MLH Local Hack Day - a worldwide celebration of learning, building, and sharing. Over 275 communities around the world are hosting simultaneous 12 hour hackathons where developers, designers, and makers will join forces to bring their crazy ideas to life. 
+              The multiple, overlapping technology layers involved in building a smarter and connected world make it necessary to bring together diverse sets of thinkers, makers, and coders from different fields. 
               </CardText>
               <CardText>
-              This page has everything you need to know to get the most out of Local Hack Day 2017. With the help of our wonderful sponsors, we curated lots of great resources and activities to make the day unforgettable for participants everywhere. Make sure you read this page thoroughly, and let us know if you have any questions.
+              We are organizing an IoT hackathon to allow you to push the boundaries of creativity, innovation, reality, and tech to build solutions and concepts that have the potential to make a difference in people’s lives.
               </CardText>
               <CardText>
                   Happy Hacking!
               </CardText>
+              <Button  href="widgets">
+                    <large>Start Event</large>
+              </Button>
             </CardBody>
             <CardImg
               className="card-img-right"
@@ -231,15 +234,14 @@ class ChallengesPage extends React.Component {
         <Col md="12" sm="8" xs="8">
           <Card className="flex-row">
             <CardBody>
-              <CardTitle>Get the most out of Local Hack Day!</CardTitle>
+              <CardTitle>Get the most out of IOT Hackathon!</CardTitle>
               <CardText>
-              It's finally here! December 2nd, 2017 marks the 4th annual MLH Local Hack Day - a worldwide celebration of learning, building, and sharing. Over 275 communities around the world are hosting simultaneous 12 hour hackathons where developers, designers, and makers will join forces to bring their crazy ideas to life. 
+              We are inviting teams of makers, developers, and technologists to collaborate and explore the next-gen technologies of smart homes, smart wearables, smart cities, and connected cars / smart driving experience in an environment that encourages you innovate and build.         
               </CardText>
               <CardText>
-              This page has everything you need to know to get the most out of Local Hack Day 2017. With the help of our wonderful sponsors, we curated lots of great resources and activities to make the day unforgettable for participants everywhere. Make sure you read this page thoroughly, and let us know if you have any questions.
+              Form teams, explore possibilities, and submit your “big idea” on or before November 13 to our panel of judges through our hackathon platform. The judges will screen the ideas based on factors like innovation, creativity, social impact, and feasibility . The shortlisted teams will be invited to be part of a 24-hr hackathon on November 26 at the HackerEarth HQ in Bangalore.
               </CardText>
               <CardText>
-                  Happy Hacking!
               </CardText>
             </CardBody>
           </Card>
@@ -256,7 +258,9 @@ class ChallengesPage extends React.Component {
               avatarSize={60}
               name="Jamy"
               date="1 hour ago"
-              text="Lorem ipsum dolor sit amet,consectetuer edipiscing elit,sed diam nonummy euismod tinciduntut laoreet doloremagna"
+              text="
+              The event cost is $25 for all hackathon participants and they include food throughout the weekend, WWCode swag, giveaways, and prizes for the winners.
+              We have scholarships available for anyone who is a student, under-employed, or in need of financial assistance."
               buttonProps={{
                 children: 'show',
               }}
